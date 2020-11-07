@@ -4,3 +4,62 @@ border color : 48cd31 linear gradient?
 a links : #4acc99
 */
 
+header,
+nav,
+section,
+ul {
+  border: 1px solid green;
+}
+div {
+  border: 2px solid blue;
+  position: relative;
+  left: 23%;
+  width: 55%;
+}
+div > div {
+  position: relative;
+  border: 3px solid black;
+  width: 70%;
+}
+header > h1 {
+  text-align: center;
+  font-style: italic;
+}
+nav > ul {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+header ul li,
+footer ul li {
+  padding-right: 5px;
+  margin-left: 10px;
+  display: inline;
+}
+footer nav ul > li + li {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+footer nav ul > li + li + li {
+  border: none;
+}
+header ul > li {
+  border-right: 3px solid black;
+  color: red;
+}
+header ul > li + li {
+  border: none;
+  color: green;
+}
+section {
+  margin: 20px;
+}
+img {
+  height: 350px;
+  width: auto;
+  float: right;
+  padding: 10px 5px;
+}
