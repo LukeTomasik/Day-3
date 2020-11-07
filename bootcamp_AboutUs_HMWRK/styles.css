@@ -3,27 +3,46 @@ background teal color : #87ceeb
 border color : 48cd31 linear gradient?
 a links : #4acc99
 */
-
-header,
-nav,
-section,
-ul {
-  border: 1px solid green;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
+
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
 div {
-  border: 2px solid blue;
+  background-color: #87ceeb;
+  border: 2px solid #87ceeb;
   position: relative;
   left: 23%;
-  width: 55%;
+  width: 60%;
+  height: 100%;
 }
 div > div {
-  position: relative;
-  border: 3px solid black;
-  width: 70%;
+  border: 4px solid #48cd31;
+  width: auto;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  margin: 20px;
+}
+header,
+footer,
+section {
+  margin: 30px;
+}
+div footer {
+  margin-bottom: 25px;
 }
 header > h1 {
   text-align: center;
   font-style: italic;
+  margin-bottom: 15px;
+  color: white;
 }
 nav > ul {
   display: inline-block;
@@ -31,35 +50,47 @@ nav > ul {
   text-align: center;
   left: 50%;
   transform: translate(-50%);
+  padding: 0px;
 }
 
 header ul li,
 footer ul li {
   padding-right: 5px;
-  margin-left: 10px;
   display: inline;
 }
 footer nav ul > li + li {
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 footer nav ul > li + li + li {
   border: none;
 }
-header ul > li {
-  border-right: 3px solid black;
-  color: red;
+header ul > li a {
+  border-right: 1px solid black;
+  color: white;
+  padding-right: 5px;
 }
-header ul > li + li {
+header ul li + li a,
+footer li a {
   border: none;
-  color: green;
-}
-section {
-  margin: 20px;
+  color: #4acc99;
 }
 img {
-  height: 350px;
+  height: 300px;
   width: auto;
   float: right;
   padding: 10px 5px;
+}
+article > h2 {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+article p {
+  margin-bottom: 10px;
+  color: white;
+}
+div footer nav ul > li + li {
+  padding-left: 5px;
 }
